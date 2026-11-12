@@ -83,7 +83,7 @@ def create_vm():
             "hardwareProfile": {"vmSize": VM_SIZE},
             "storageProfile": {
                 "imageReference": {"publisher": "Canonical", "offer": "ubuntu-24_04-lts",
-                                   "sku": "server-arm64", "version": "latest"},
+                                   "sku": "server", "version": "latest"},},
                 "osDisk": {"createOption": "FromImage", "deleteOption": "Delete"},
             },
             "osProfile": {"computerName": VM_NAME, "adminUsername": "azureuser",
