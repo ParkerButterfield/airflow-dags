@@ -87,9 +87,12 @@ def create_network():
         "pipeline-vnet",
         "default",
         {
-            "address_prefix": "10.0.0.0/24"
+            "properties": {
+                "addressPrefix": "10.0.0.0/24"
+            }
         }
     ).result()
+
 
     print("VNet ready")
 
